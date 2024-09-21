@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.intro {
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.intro a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.image-section {
+    margin: 20px 0;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.help-link {
+    color: #1e90ff;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.get-started {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 50px 20px;
+}
+
+.get-started h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.get-started p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.create-repo, .git-client, .clone-repo, .hello-world, .done {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 50px 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.step-number {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.step-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.step-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.step-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.step-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.code-block {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.checkmark {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkmark img {
+    width: 50px;
+    height: 50px;
+}
+
+.additional-info {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.additional-info h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.info-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro h2, .get-started h2, .step-content h2, .additional-info h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p, .get-started p, .step-content p, .info-card p {
+        font-size: 1em;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
